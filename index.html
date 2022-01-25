@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/site.webmanifest">
+    <title>KnowledgeQuiz</title>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Welcome to <span>KnowledgeQuiz</span></li>
+        </ul>
+    </div>
+<!-- start Quiz button -->
+<div class="start">
+    <h1 class="start-header">Let's test your knowledge...</h1>
+    <div class="start-btn"><button>Start</button></div>
+</div>
+<!-- rule Box -->
+<div class="rule_box hide">
+    <div class="rule-title"><span>Please read following rules before stating quiz.</span></div>
+    <div class="rule-list">
+        <div class="rule">1. You will have only <span>15 seconds</span> per each question.</div>
+        <div class="rule">2. Once you select your answer, it can't be undone.</div>
+        <div class="rule">3. You can't select any option once time goes off.</div>
+        <div class="rule">4. You can't exit from the Quiz while you're playing.</div>
+        <div class="rule">5. You'll get points on the basis of your correct answers.</div>
+    </div>
+    <div class="buttons">
+        <button class="quit">Exit Quiz</button>
+        <button class="restart">Continue</button>
+    </div>
+</div>
+<!-- Quiz Box -->
+<div class="quiz_box hide">
+    <header>
+        <div class="title">KnowledgeQuiz</div>
+        <div class="timer">
+            <div class="time_left_txt">Time Left</div>
+            <div class="timer_sec">15</div>
+        </div>
+        <div class="time_line"></div>
+    </header>
+    <section>
+        <div class="que_text">
+            <!-- question will be added from JavaScript -->
+        </div>
+        <div class="option_list">
+            <!-- options will be from JavaScript -->
+        </div>
+    </section>
+    <!-- footer of Quiz Box -->
+    <footer>
+        <div class="total_que">
+            <!--  Question Count Number from JavaScript -->
+        </div>
+        <button class="next_btn">Next Que</button>
+    </footer>
+</div>
+<!-- Result Box -->
+<div class="result_box hide">
+    <div class="icon">
+        <!-- <i class="fas fa-trophy"></i> -->
+        <!-- <i class="fas fa-frown"></i> -->
+        <!-- <i class="fas fa-smile-beam"></i> -->
+    </div>
+    <div class="complete_text">You've completed the Quiz!</div>
+    <div class="score_text">
+        <!-- Score Result from JavaScript -->
+    </div>
+    <div class="buttons">
+        <button class="restart">Replay Quiz</button>
+        <button class="quit">Quit Quiz</button>
+    </div>
+</div>
+
+<script src="confetti.js"></script>
+<script src="quetions.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
