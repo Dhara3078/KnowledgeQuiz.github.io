@@ -1,5 +1,7 @@
-# KnowledgeQuiz.github.io
-This is basic quiz website. 
+# KnowledgeQuiz
+Website Link: https://dhara3078.github.io/KnowledgeQuiz.github.io/
+
+This is basic quiz website. I made this while learning JavaScript.
 
 ## Used technologies
 1.HTML
